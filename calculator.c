@@ -1,12 +1,24 @@
+//calculator for different operations
 #include <stdio.h>
 #include <math.h>
+//all functions used are declared
+int addition()
+int subtraction()
+int multiplication()
+int division()
+int squareroot()
+int quadraticroot()
+int hcf()
+int percent()    
+int factorial()
+
 int main()
 {
-    int select = 0;
+    int select = 0;//declare to choose the operation
     printf("what do you want to perform?\n");
     printf("1.Addition\n2.Subtraction\n3.Multiplication\n4.Division\n5.Square Root\n6.Quadratic Root\n7.Highest Common Factor\n8.Calculate Result Percentage\n9.Calculate Factorial Value");
 
-again:
+again://to run again the code without closing 
     printf("\nchoose by typing the number of respected operator:\n");
     scanf("%d", &select);
 
@@ -61,12 +73,12 @@ again:
     }
     else
     {
-        goto again;
+        goto again;//to run again the code
     }
     
-    return 0;
+    return 0;//to close the program
 }
-int addition()
+int addition()//addition function
 {
     float num1, num2 = 0;
     printf("enter the numbers\n");
@@ -78,6 +90,7 @@ int addition()
     printf("%.2f + %.2f = %.3f", num1, num2, ans);
     return 0;
 }
+//multiplication fumction
 int multiplication()
 {
     float num1, num2 = 0;
@@ -90,6 +103,7 @@ int multiplication()
     printf("%.2f * %.2f = %.3f", num1, num2, ans);
     return 0;
 }
+//division function
 int division()
 {
     float num1, num2 ,ans= 0;
@@ -102,6 +116,7 @@ int division()
     printf("%.2f / %.2f = %.3f", num1, num2, ans);
     return 0;
 }
+//subtraction function
 int subtraction()
 {
     float num1, num2 = 0;
@@ -114,6 +129,7 @@ int subtraction()
     printf("%.2f - %.2f = %.3f", num1, num2, ans);
     return 0;
 }
+//function to find squareroot 
 int squareroot()
 {
     float a = 0;
@@ -126,6 +142,7 @@ int squareroot()
     printf("square root = %.3f ", root);
     return 0;
 }
+//function to find quadratic root
 int quadraticroot()
 {
     printf("this is a program to find quadratic root\n");
@@ -169,6 +186,7 @@ int quadraticroot()
     }
     return 0;
 }
+//function to find hcf of 2 integers
 int hcf()
 {
     int n1, n2, i, hcf = 0;
@@ -188,7 +206,7 @@ int hcf()
     printf(" = %d \n", hcf);
     return 0;
 }
-    
+//function to find percentage of school reasult
 int percent()
 {
     int tsub = 0;
@@ -276,6 +294,7 @@ int percent()
     }
     return 0;
 }
+//factorial function
 int factorial()
 {
     int n = 0;
